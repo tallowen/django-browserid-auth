@@ -1,4 +1,5 @@
 # Django settings for sample_app project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -103,6 +104,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'sample_app.urls'
 
 TEMPLATE_DIRS = (
+    os.path.abspath("../browserid_auth/templates"),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
