@@ -3,7 +3,7 @@
     cd django-browserid-auth/
     python setup.py install
     cd ../sample_app/
-    ./manage.py syncdb
+    ./manage.py syncdb --noinput
     ./manage.py runserver
 
 #Run it
